@@ -1,20 +1,15 @@
 var TwoFer = function () {}
 
-var who = ''
+var who = 'Bob'
 TwoFer.prototype.twoFer = function (who) {
-  if (who !== 'Bob' || 'Alice') {
-    return 'One for you, one for me.'
+  if (who === 'Bob') {
+    return 'One for Bob, one for me.'
   } else if (who === 'Alice') {
     return 'One for Alice, one for me.'
   } else {
-    return 'One for Bob, one for me.'
+    return 'One for you, one for me.'
   }
 }
-// your code goes here
-// You will have to use the parameter who
-// in some way. In this example, it is just
-// returned, but your solution will have to
-// use a conditional.
-TwoFer(who)
+console.log(TwoFer(who))
 
 module.exports = TwoFer
