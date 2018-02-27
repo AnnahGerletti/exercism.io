@@ -3,28 +3,19 @@
 // convenience to get you started writing code faster.
 //
 
-var Year = function () {
-//
-// YOUR CODE GOES HERE
-//
-};
+var Year = function (input) {
+  this.year = input
+}
 
 Year.prototype.isLeap = function () {
-//
-// YOUR CODE GOES HERE
-//
-};
+  if (this.year % 4 === 0) {
+    return true
+  } else if (this.year % 100 || 400 === 0) {
+    return false
+  } else {
+    return false
+  }
 
-module.exports = Year;
+}
 
-var year = Number 
-
-if (year % 4 === 0 ){
-  return "Is Leap Year"
-}
-if else (year % 100 || 400 === 0){
-  return "not a leap year"
-}
-else {
-  return "Nope"
-}
+module.exports = Year
